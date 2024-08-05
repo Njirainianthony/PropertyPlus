@@ -10,3 +10,6 @@ val Purple40 = Color(0xFF6650a4)
 val PurpleGrey40 = Color(0xFF625b71)
 val Pink40 = Color(0xA3673AB7)
 val Lavender = Color(0xA3673AB7)
+
+//BUTTON COLOR
+val Blue = Color(0xFF3F51B5)

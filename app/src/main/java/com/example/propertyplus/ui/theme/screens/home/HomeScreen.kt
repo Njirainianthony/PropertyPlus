@@ -16,13 +16,14 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
-import com.example.propertyplus.ui.theme.LightPurple
+import com.example.propertyplus.ui.theme.Lavender
+
 
 
 @Composable
 fun HomeScreen(navController: NavController){
     Column(modifier = Modifier
-        .fillMaxSize().background(LightPurple),
+        .fillMaxSize().background(Lavender),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
 

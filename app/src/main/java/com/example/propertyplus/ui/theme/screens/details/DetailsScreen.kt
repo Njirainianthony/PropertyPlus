@@ -2,6 +2,7 @@ package com.example.propertyplus.ui.theme.screens.details
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -11,6 +12,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Notifications
@@ -117,11 +119,16 @@ fun DetailsScreen(navController: NavController){
         Spacer(modifier = Modifier.height(20.dp))
 
 
-        Row {
+        Row(modifier = Modifier
+            .padding(start = 20.dp, end = 20.dp)
+            .horizontalScroll(rememberScrollState())
+        ){
             //CARD 1
 
             Card(
-                modifier = Modifier.height(180.dp).width(200.dp)
+                modifier = Modifier
+                    .height(180.dp)
+                    .width(200.dp)
             ) {
 
                 Box (modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center){
@@ -136,7 +143,101 @@ fun DetailsScreen(navController: NavController){
                     Spacer(modifier = Modifier.height(20.dp))
                 }
 
-            }
+            }  //END OF CARD 1
+
+            Spacer(modifier = Modifier.width(20.dp))
+
+            //CARD 2
+            Card(
+                modifier = Modifier
+                    .height(180.dp)
+                    .width(200.dp)
+            ) {
+
+                Box (modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center){
+
+                    Image(
+                        painter = painterResource(id = R.drawable.homeimage2),
+                        contentDescription ="home",
+                        modifier = Modifier.fillMaxSize(),
+                        contentScale = ContentScale.Crop
+                    )
+
+                    Spacer(modifier = Modifier.height(20.dp))
+                }
+
+            }  //END OF CARD 2
+
+            Spacer(modifier = Modifier.width(20.dp))
+
+
+            //CARD 3
+            Card(
+                modifier = Modifier
+                    .height(180.dp)
+                    .width(200.dp)
+            ) {
+
+                Box (modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center){
+
+                    Image(
+                        painter = painterResource(id = R.drawable.homeimage3),
+                        contentDescription ="home",
+                        modifier = Modifier.fillMaxSize(),
+                        contentScale = ContentScale.Crop
+                    )
+
+                    Spacer(modifier = Modifier.height(20.dp))
+                }
+
+            }  //END OF CARD 3
+
+            Spacer(modifier = Modifier.width(20.dp))
+
+            //CARD 4
+            Card(
+                modifier = Modifier
+                    .height(180.dp)
+                    .width(200.dp)
+            ) {
+
+                Box (modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center){
+
+                    Image(
+                        painter = painterResource(id = R.drawable.homeimage4),
+                        contentDescription ="home",
+                        modifier = Modifier.fillMaxSize(),
+                        contentScale = ContentScale.Crop
+                    )
+
+                    Spacer(modifier = Modifier.height(20.dp))
+                }
+
+            }  //END OF CARD 4
+
+            Spacer(modifier = Modifier.width(20.dp))
+
+
+            //CARD 5
+            Card(
+                modifier = Modifier
+                    .height(180.dp)
+                    .width(200.dp)
+            ) {
+
+                Box (modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center){
+
+                    Image(
+                        painter = painterResource(id = R.drawable.homeimage5),
+                        contentDescription ="home",
+                        modifier = Modifier.fillMaxSize(),
+                        contentScale = ContentScale.Crop
+                    )
+
+                    Spacer(modifier = Modifier.height(20.dp))
+                }
+
+            }  //END OF CARD 5
 
 
         }
@@ -149,6 +250,8 @@ fun DetailsScreen(navController: NavController){
 
 }
 
+
+//PREVIEW FUNCTION
 @Composable
 @Preview(showBackground = true)
 fun DetailsScreenPreview(){

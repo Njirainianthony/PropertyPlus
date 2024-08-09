@@ -42,12 +42,13 @@ fun SplashScreen(navController: NavController){
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        //COROUTINE SCOPE  - FUNCTION IS TO MOVE AUTOMATICALY
+        //COROUTINE SCOPE  - FUNCTION IS TO MOVE AUTOMATICALLY TO THE PAGE DEFINED BELOW IN THE CODE
         var coroutineScope= rememberCoroutineScope()
         coroutineScope.launch {
             delay(2000)
             navController.navigate(ROUT_HOME)
         }
+        //End of coroutine scope
 
         //Lottie Animation
         val composition by rememberLottieComposition(spec = LottieCompositionSpec.RawRes(R.raw.property))

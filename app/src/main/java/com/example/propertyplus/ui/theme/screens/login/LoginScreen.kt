@@ -42,6 +42,7 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.example.propertyplus.R
 import com.example.propertyplus.data.AuthViewModel
+import com.example.propertyplus.navigation.ROUT_DASHBOARD
 import com.example.propertyplus.navigation.ROUT_HOME
 import com.example.propertyplus.navigation.ROUT_SIGN
 import com.example.propertyplus.ui.theme.Blue
@@ -134,7 +135,7 @@ fun LoginScreen(navController: NavController){
         Button(
             onClick = {
                 authViewModel.login(email, password)
-                navController.navigate(ROUT_HOME) },
+                navController.navigate(ROUT_DASHBOARD) },
             modifier = Modifier
                 .fillMaxWidth()
                 .height(50.dp)

@@ -12,7 +12,7 @@ val Pink40 = Color(0xA3673AB7)
 val Lavender = Color(0xA3673AB7)
 
 //BUTTON COLOR
-val Blue = Color(0xFF3F51B5)
+val Blue = Color(0xFF3F7EB5)
 
 //SPLASH SCREEN BACKGROUND
 val Grey = Color(0x323F66B5)
